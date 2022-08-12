@@ -1,0 +1,36 @@
+.skills {
+    display: flex;
+    column-gap: 30px;
+}
+
+.skill {
+    width: calc((100% - 90px) / 4);
+}
+
+.skill-icon-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #f5f4fa;
+    border-radius: 4px;
+}
+
+.skill-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-accent);
+}
+
+.skill-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

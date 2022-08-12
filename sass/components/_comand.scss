@@ -1,0 +1,50 @@
+.section.command-studio {
+    background-color: #f5f4fa;
+}
+
+.command {
+    display: flex;
+    column-gap: 30px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.command-item {
+    width: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+}
+
+.command-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.command-item-name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--text-color-accent);
+}
+
+.command-item-text {
+    margin-bottom: 16px;
+}
+
+.social-link-comand:hover,
+.social-link-comand:focus {
+    background-color: var(--text-color-hover);
+    border-radius: 50%;
+    fill: #ffffff;
+}
