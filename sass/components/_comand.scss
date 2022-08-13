@@ -1,18 +1,11 @@
-.section.command-studio {
-    background-color: #f5f4fa;
-}
-
 .command {
     display: flex;
     column-gap: 30px;
 
-    font-size: 16px;
-    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
-.command-item {
+.command__item {
     width: calc((100% - 90px) / 4);
     padding-bottom: 30px;
 
@@ -22,29 +15,32 @@
     background-color: #ffffff;
 }
 
-.command-img {
+.command__img {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
 }
 
-.command-item-name {
+.command__name {
     margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
+    @include font(500, 16px, 19px, 0.03em);
     color: var(--text-color-accent);
 }
 
-.command-item-text {
+.command__text {
     margin-bottom: 16px;
+
+    @include font(400, 16px, 19px, 0.03em);
 }
 
-.social-link-comand:hover,
-.social-link-comand:focus {
-    background-color: var(--text-color-hover);
-    border-radius: 50%;
-    fill: #ffffff;
+.comand__social_decor {
+    fill: var(--svg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--text-color-hover);
+        border-radius: 50%;
+        fill: #ffffff;
+    }
 }

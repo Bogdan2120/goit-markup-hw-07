@@ -1,13 +1,10 @@
 .logo-clients {
-    display: flex;
-    justify-content: center;
+    @extend %align-horizontel;
     column-gap: 30px;
 }
 
-.logo-client-link {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.logo-client__link {
+    @extend %align-center;
     width: 170px;
     height: 92px;
     padding-top: 16px;

@@ -3,14 +3,12 @@
     column-gap: 30px;
 }
 
-.skill {
+.skills__item {
     width: calc((100% - 90px) / 4);
 }
 
-.skill-icon-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skills__icon-body {
+    @extend %align-center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -19,18 +17,14 @@
     border-radius: 4px;
 }
 
-.skill-title {
+.skills__title {
     margin-bottom: 10px;
 
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--text-color-accent);
 }
 
-.skill-text {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+.skills__text {
+    @include font(400, 14px, 24px, 0.03em);
 }

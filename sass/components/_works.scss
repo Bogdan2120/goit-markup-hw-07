@@ -1,38 +1,29 @@
-.section.our-works {
-    padding-top: 0;
-}
-
 .works {
     display: flex;
     column-gap: 30px;
 }
 
-.work {
+.works__item {
     position: relative;
     width: calc((100% - 60px) / 3);
 }
 
-.work-img {
+.works__img {
     width: 100%;
     height: auto;
 }
 
-.work-img-caption {
+.works__img-caption {
     position: absolute;
     bottom: 0;
     left: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-center;
 
     width: 100%;
     height: 70px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
 
     color: #ffffff;

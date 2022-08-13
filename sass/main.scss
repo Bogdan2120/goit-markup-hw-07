@@ -3,17 +3,21 @@
 @import './utils/link';
 @import './utils/list';
 @import './utils/common';
+@import './utils/mixin';
+@import './utils/placeholder';
 
 @import './components/section';
 @import './components/conteiner';
 @import './components/title';
 @import './components/social-link';
+@import './components/address';
+@import './components/button';
 
 @import './components/header';
 
 @import './components/hero';
 
-@import './components/about';
+@import './components/our-skills';
 
 @import './components/works';
 
